@@ -14,10 +14,10 @@
         <h1>MH-Portfolio</h1>
         <nav aria-label="Main Navigation">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" data-section="home">Home</a></li>
+                <li><a href="#" data-section="about">About</a></li>
+                <li><a href="#" data-section="projects">Projects</a></li>
+                <li><a href="#" data-section="contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -76,5 +76,76 @@
     </footer>
 
     <script src="script.js"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact form for employers to reach out.">
+    <meta name="keywords" content="contact form, employer contact, portfolio, web development">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Form</h1>
+    </header>
+
+    <main>
+        <form id="contactForm" action="https://formspree.io/your_email_here" method="POST">
+            <div class="form-group">
+                <label for="employerName">Employer Name:</label>
+                <input type="text" id="employerName" name="employerName" required>
+            </div>
+            <div class="form-group">
+                <label for="employerEmail">Employer Email:</label>
+                <input type="email" id="employerEmail" name="employerEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+
+    <!-- Optional: If you want to handle form submission success or error with JavaScript -->
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var form = event.target;
+            var formData = new FormData(form);
+
+            fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    form.reset();
+                    alert("Your application has been submitted successfully. Thank you!");
+                } else {
+                    alert("Oops! Something went wrong and we couldn't send your application.");
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert("Oops! Something went wrong and we couldn't send your application.");
+            });
+        });
+    </script>
 </body>
 </html>
