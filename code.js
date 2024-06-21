@@ -1,15 +1,16 @@
-// script.js
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('.section-box');
+  const navLinks = document.querySelectorAll('nav ul li a');
 
-document.querySelectorAll('nav ul li a').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-      e.preventDefault();
+  // Show only the home section by default
+  document.getElementById('home').style.display = 'block';
 
-      const targetId = this.getAttribute('href').substring(1);
-      const targetSection = document.getElementById(targetId);
+  navLinks.forEach(link => {
+      link.addEventListener('click', (event) => {
+          event.preventDefault();
+          const sectionId = event.target.getAttribute('data-section');
 
-      window.scrollTo({
-          top: targetSection.offsetTop,
-          behavior: 'smooth'
-      });
-  });
-});
+          // Hide all sections
+          sections.forEach(section => {
+              section.style.display = 'none';
+         
