@@ -11,6 +11,10 @@
   --pale-aqua: #caf0f8;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* General Styles */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -216,3 +220,23 @@ footer {
     align-items: center;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  background: url('path-to-your-image.jpg') no-repeat center center/cover;
+  color: #03045e;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 3em;
+}
+
+.hero p {
+  font-size: 1.5em;
+}
+
