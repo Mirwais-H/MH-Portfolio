@@ -23,7 +23,7 @@ body {
   line-height: 1.6;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Center all content horizontally */
   background-color: var(--pale-aqua);
   color: var(--dark-blue);
 }
@@ -42,7 +42,17 @@ main {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Center all content horizontally */
+}
+
+/* Section Styles */
+.section-box {
+  background: var(--very-light-aqua);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 /* Font Styles */
@@ -51,6 +61,7 @@ h1 {
   font-size: 2.5em;
   margin: 0;
   color: var(--aqua);
+  text-align: center;
 }
 
 h2 {
@@ -80,7 +91,7 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Center navigation links */
   gap: 15px;
 }
 
@@ -126,16 +137,7 @@ button:hover {
   background-color: var(--midnight-blue);
 }
 
-/* Section Styles */
-.section-box {
-  background: var(--very-light-aqua);
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 20px;
-  width: 100%;
-}
-
+/* Project Styles */
 .project {
   text-align: center;
   margin-bottom: 20px;
@@ -183,8 +185,7 @@ footer {
 @media (max-width: 600px) {
   nav ul {
     display: block;
-    text-align: center;
-    align-items: center;
+    text-align: center; /* Center navigation links */
   }
 
   nav ul li {
@@ -198,7 +199,6 @@ footer {
 
   .section-box {
     padding: 10px;
-    alignment: center;
   }
 
   h1 {
@@ -213,6 +213,7 @@ footer {
     font-size: 1.2em;
   }
 }
+
 
 /* Tablet styles */
 @media (min-width: 601px) and (max-width: 1024px) {
