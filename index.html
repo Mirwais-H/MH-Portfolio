@@ -17,11 +17,13 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li> <!-- New Skills link -->
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact-form">Contact Form</a></li> <!-- New Contact Form link -->
             </ul>
         </nav>
-        
     </header>
+    
     
     <div class="hero">
         <h1>Welcome to MH-Portfolio</h1>
@@ -52,27 +54,38 @@
         <div class="section-box" id="about">
             <section>
                 <h2>About Me</h2>
-                <p>
-                    Hi there! My name is Mirwais Hamidi, and I'm a high school sophomore with a deep passion for designing and programming. From a young age, I've been fascinated by the world of technology and the endless possibilities it offers.
-                </p>
-                <p>
-                    My journey into the realm of coding began with small projects, and over time, I've honed my skills and taken on more complex challenges. I find joy in creating interactive and engaging experiences, whether it's through a simple web page or an intricate game.
-                </p>
-                <p>
-                    Aside from my technical pursuits, I enjoy collaborating with others and learning from the vast community of developers. I believe that sharing knowledge and working together can lead to amazing innovations.
-                </p>
-                <p>
-                    I aspire to become a software engineer, continuously improving and expanding my skill set. Currently, I am seeking opportunities to apply my skills in a professional setting. If you are an employer looking for a passionate and dedicated individual to join your team, please feel free to reach out to me.
-                </p>
-                <p>
-                    You can contact me via the Email button or the contact form at the bottom of this page. I am excited about the prospect of contributing to a forward-thinking company and am eager to discuss how I can add value to your team.
-                </p>
-                <p>
-                    Thank you for visiting my portfolio!
-                </p>
+                <div class="about-content">
+                    <div class="about-photo">
+                        <img src="https://i.ibb.co/G34NRQf/My-Image.jpg"  alt="Mirwais Hamidi" class="about-img">
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            Hi there! My name is Mirwais Hamidi, and I'm a high school sophomore with a deep passion for designing and programming. From a young age, I've been fascinated by the world of technology and the endless possibilities it offers.
+                        </p>
+                        <p>
+                            My journey into the realm of coding began with small projects, and over time, I've honed my skills and taken on more complex challenges. I find joy in creating interactive and engaging experiences, whether it's through a simple web page or an intricate game.
+                        </p>
+                        <p>
+                            Aside from my technical pursuits, I enjoy collaborating with others and learning from the vast community of developers. I believe that sharing knowledge and working together can lead to amazing innovations.
+                        </p>
+                        <p>
+                            I aspire to become a software engineer, continuously improving and expanding my skill set. Currently, I am seeking opportunities to apply my skills in a professional setting. If you are an employer looking for a passionate and dedicated individual to join your team, please feel free to reach out to me.
+                        </p>
+                        <p>
+                            You can contact me via the Email button or the contact form at the bottom of this page. I am excited about the prospect of contributing to a forward-thinking company and am eager to discuss how I can add value to your team.
+                        </p>
+                        <p>
+                            Thank you for visiting my portfolio!
+                        </p>
+                    </div>
 
+                </div>
             </section>
         </div>
+        
+        
+                        
+        
         
         <div class="section-box" id="skills">
             <section>
@@ -128,6 +141,16 @@
 
 
     <script src="script.js"></script>
+
+        <!-- Your existing content here -->
+    
+        <a id="scrollToTopBtn" href="#top" class="btn scroll-to-top-btn" aria-label="Scroll to top">
+            Go to the Top
+        </a>
+    
+        <!-- Your existing scripts and closing body tag -->
+
+    
 </body>
 </html>
 
@@ -143,28 +166,32 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Contact Form</h1>
-    </header>
+
 
     <main>
-        <form id="contactForm" action="https://formspree.io/f/xqazzpzb" method="POST">
-            <div class="form-group">
-                <label for="employerName">Employer Name:</label>
-                <input type="text" id="employerName" name="employerName" required>
-            </div>
-            <div class="form-group">
-                <label for="employerEmail">Employer Email:</label>
-                <input type="email" id="employerEmail" name="employerEmail" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit">Submit</button>
-            </div>
-        </form>
+        <div class="section-box" id="contact-form">
+            <section>
+                <h2>Contact Form</h2>
+                <form id="contactForm" action="https://formspree.io/f/xqazzpzb" method="POST">
+                    <div class="form-group">
+                        <label for="employerName">Employer Name:</label>
+                        <input type="text" id="employerName" name="employerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="employerEmail">Employer Email:</label>
+                        <input type="email" id="employerEmail" name="employerEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+        
     </main>
 
     <footer>
