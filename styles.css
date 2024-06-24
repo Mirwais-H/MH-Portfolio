@@ -34,7 +34,6 @@ header, footer {
   background: var(--midnight-blue);
   color: var(--pale-aqua);
   padding: 1em 0;
-  margin: 0; /* Ensure no default margin */
 }
 
 main {
@@ -54,7 +53,6 @@ main {
   padding: 20px;
   margin-bottom: 20px;
   width: 100%;
-  text-align: center; /* Center text content */
 }
 
 /* Font Styles */
@@ -188,8 +186,6 @@ footer {
   nav ul {
     display: block;
     text-align: center; /* Center navigation links */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
   }
 
   nav ul li {
@@ -203,7 +199,6 @@ footer {
 
   .section-box {
     padding: 10px;
-    margin: 0 auto; /* Center section boxes horizontally */
   }
 
   h1 {
@@ -218,6 +213,7 @@ footer {
     font-size: 1.2em;
   }
 }
+
 
 
 
