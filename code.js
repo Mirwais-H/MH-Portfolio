@@ -1,16 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('.section-box');
-  const navLinks = document.querySelectorAll('nav ul li a');
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
-  // Show only the home section by default
-  document.getElementById('home').style.display = 'block';
+    // Scroll to top functionality
+    scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 
-  navLinks.forEach(link => {
-      link.addEventListener('click', (event) => {
-          event.preventDefault();
-          const sectionId = event.target.getAttribute('data-section');
-
-          // Hide all sections
-          sections.forEach(section => {
-              section.style.display = 'none';
-         
+    // Show/hide the button based on scroll position
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) { // Adjust this value based on your preference
+            scrollToTopBtn.style.display = 'block';
+        } else {
+            scrollToTopBtn.style.display = 'none';
+        }
+    });
+});
