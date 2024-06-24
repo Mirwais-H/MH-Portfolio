@@ -284,7 +284,7 @@ html {
 
 .about-img {
   max-width: auto; /* Ensures the image resizes responsively */
-  height: 80&;
+  height: 80%;
   border-radius: 50%; /* Makes the image round */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
 }
