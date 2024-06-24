@@ -215,9 +215,6 @@ footer {
 }
 
 
-
-
-
 /* Tablet styles */
 @media (min-width: 601px) and (max-width: 1024px) {
   .project {
@@ -283,7 +280,7 @@ html {
 }
 
 .about-img {
-  max-width: 80%; /* Ensures the image resizes responsively */
+  max-width: 100%; /* Ensures the image resizes responsively */
   height: auto;
   border-radius: 50%; /* Makes the image round */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
