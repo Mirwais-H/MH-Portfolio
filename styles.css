@@ -240,3 +240,45 @@ html {
   font-size: 1.5em;
 }
 
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px; /* Adjust position as needed */
+  right: 20px; /* Adjust position as needed */
+  background-color: var(--blue);
+  color: var(--pale-aqua);
+  padding: 10px 20px; /* Adjust padding as needed to match "View on Roblox" */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.scroll-to-top-btn:hover {
+  background-color: var(--midnight-blue);
+  transform: translateY(-2px);
+}
+
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-text {
+  max-width: 600px; /* Adjust as needed */
+  margin-bottom: 20px;
+}
+
+.about-photo {
+  margin-top: 20px;
+}
+
+.about-img {
+  max-width: 100%; /* Ensures the image resizes responsively */
+  height: auto;
+  border-radius: 50%; /* Makes the image round */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
