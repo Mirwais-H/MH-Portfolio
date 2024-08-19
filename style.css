@@ -36,7 +36,7 @@ body {
   color: var(--dark-blue);
 }
 
-header, footer {
+header {
   width: 100%;
   text-align: center;
   background: white;
@@ -44,6 +44,8 @@ header, footer {
   padding: 1em 0;
   box-shadow: 10px 10px 10px #e7e7e7;
 }
+
+
 
 .nav-btn {
   border: none;
@@ -191,32 +193,43 @@ button:hover {
 .project {
   text-align: center;
   margin-bottom: 20px;
+  align-items: center;
 }
 
 .project img {
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
+  border-radius: 50px;
+}
+
+.project .logo {
+  max-width: 250px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 250px;
 }
 
 .project a.btn,
 .contact-buttons a.btn {
-  background-color: var(--blue);
-  color: var(--pale-aqua);
-  padding: 10px 20px;
-  margin: 5px;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
   display: inline-block;
+  margin-right: 15px; /* Space between buttons */
+}
+
+.project a.btn,
+.contact-buttons a.btn img {
+  width: 50px; /* Icon size */
+  height: 50px;
+  vertical-align: middle;
 }
 
 
-.project a.btn:hover,
-.contact-buttons a.btn:hover {
-  background-color: var(--midnight-blue);
+.contact-buttons a.btn:hover,
+.project a.btn:hover {
   transform: translateY(-2px);
+  transform: scale(1.1);
 }
+
 
 .contact-buttons {
   display: flex;
@@ -264,6 +277,11 @@ button:hover {
 
 p { 
   font-size: 16px; 
+  background-color: var(--very-light-aqua);
+  width: 400px;
+  display: block;
+  margin: auto;
+  border-radius: 15px;
 } 
 
 .container { 
@@ -316,8 +334,8 @@ p {
 }
 
 footer {
-  background: var(--midnight-blue);
-  color: var(--pale-aqua);
+  background: var(--white-color);
+  color: var(--black-color);
   text-align: center;
   padding: 10px 0;
 }
@@ -339,20 +357,25 @@ footer {
   }
 
   header {
-    width: 630px;
+    width: 450px;
+    display: block;
+    margin: auto;
   }
 
   footer {
-    width: 630px;
+    width: 450px;
+    display: block;
+    margin: auto;
   }
 
   .section-box {
-    width: 425px;
-    margin-left: 100px;
+    width: 415px;
+    display: block;
+    margin: auto;
   }
 
   .project-grid {
-    width: 425px;
+    width: 415px;
     margin-left: 100px;
   }
 
