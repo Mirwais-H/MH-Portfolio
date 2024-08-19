@@ -248,8 +248,17 @@ footer {
     padding: 10px;
   }
 
+  header {
+    width: 630px;
+  }
+
   .section-box {
-    padding: 10px;
+    width: 390px;
+    margin-left: 0px;
+  }
+
+  .project-grid {
+    width: 350px;
   }
 
   h1 {
@@ -348,7 +357,7 @@ html {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 
