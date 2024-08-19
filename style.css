@@ -225,105 +225,6 @@ button:hover {
   margin-top: 20px;
 }
 
-footer {
-  background: var(--midnight-blue);
-  color: var(--pale-aqua);
-  text-align: center;
-  padding: 10px 0;
-}
-
-/* Mobile styles */
-@media (max-width: 600px) {
-  nav ul {
-    display: block;
-    text-align: center; /* Center navigation links */
-  }
-
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
-
-  main {
-    padding: 10px;
-  }
-
-  header {
-    width: 630px;
-  }
-
-  .section-box {
-    width: 390px;
-    margin-left: 0px;
-  }
-
-  .project-grid {
-    width: 350px;
-  }
-
-  h1 {
-    font-size: 2em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-
-  h3 {
-    font-size: 1.2em;
-  }
-}
-
-
-/* Tablet styles */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.hero {
-  background: url('path-to-your-image.jpg') no-repeat center center/cover;
-  color: #03045e;
-  text-align: center;
-  padding: 100px 0;
-}
-
-.hero h1 {
-  font-size: 3em;
-}
-
-.hero p {
-  font-size: 1.5em;
-}
-
-.scroll-to-top-btn {
-  position: fixed;
-  bottom: 20px; /* Adjust position as needed */
-  right: 20px; /* Adjust position as needed */
-  background-color: var(--blue);
-  color: var(--pale-aqua);
-  padding: 10px 20px; /* Adjust padding as needed to match "View on Roblox" */
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  display: inline-block;
-  cursor: pointer;
-  z-index: 1000; /* Ensure it's above other content */
-}
-
-.scroll-to-top-btn:hover {
-  background-color: var(--midnight-blue);
-  transform: translateY(-2px);
-}
-
-
 .about-content {
   display: flex;
   flex-direction: column;
@@ -413,3 +314,90 @@ p {
 .lua {
   width: 10%;
 }
+
+footer {
+  background: var(--midnight-blue);
+  color: var(--pale-aqua);
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  nav ul {
+    display: block;
+    text-align: center; /* Center navigation links */
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  header {
+    width: 630px;
+  }
+
+  .section-box {
+    width: 425px;
+  }
+
+  .project-grid {
+    width: 425px;
+  }
+
+  .skill {  
+    height: 22px;
+  } 
+
+  .container { 
+    height: 28px;
+  } 
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+}
+
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  background: url('path-to-your-image.jpg') no-repeat center center/cover;
+  color: #03045e;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 3em;
+}
+
+.hero p {
+  font-size: 1.5em;
+}
+
+
