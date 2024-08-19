@@ -357,11 +357,13 @@ footer {
   }
 
   header {
-    width: 630px;
+    width: 425px;
+    margin-left: 100px;
   }
 
   footer {
-    width: 630px;
+    width: 425px;
+    margin-left: 100px;
   }
 
   .section-box {
