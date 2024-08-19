@@ -357,25 +357,20 @@ footer {
   }
 
   header {
-    width: 450px;
-    display: block;
-    margin: auto;
+    width: 630px;
   }
 
   footer {
-    width: 450px;
-    display: block;
-    margin: auto;
+    width: 630px;
   }
 
   .section-box {
-    width: 415px;
-    display: block;
-    margin: auto;
+    width: 425px;
+    margin-left: 100px;
   }
 
   .project-grid {
-    width: 415px;
+    width: 425px;
     margin-left: 100px;
   }
 
