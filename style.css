@@ -331,7 +331,7 @@ footer {
 
   nav ul li {
     display: block;
-    margin: 10px 0;
+    margin: 10px 10px;
   }
 
   main {
@@ -342,8 +342,13 @@ footer {
     width: 630px;
   }
 
+  footer {
+    width: 630px;
+  }
+
   .section-box {
     width: 425px;
+    margin-left: 100px;
   }
 
   .project-grid {
